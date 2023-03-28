@@ -1,0 +1,154 @@
+/* master styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* navbar styling */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(182, 231, 229);
+    padding: 25px 80px;
+}
+
+.logo {
+    font-family: 'Delicious Handrawn', cursive;
+    cursor: pointer;
+}
+
+.logo span {
+    color: crimson;
+}
+
+.nav-link-wrapper {
+    display: flex;
+    transition: border-bottom 1s;
+}
+
+.nav-link-wrapper a {
+    text-decoration: none;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-family: 'Alkatra', cursive;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    transition: all 1s ease-in-out;
+    color: black;
+}
+
+.nav-link-wrapper a:hover {
+   transform: rotate(10deg);    
+}
+
+
+/* main section */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Alkatra', cursive;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 300;
+    color: lightseagreen;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: 'Alkatra', cursive;
+}
+
+
+
+/* JS adds and removes the class when hovering */
+.img-darken {
+    transition: 1s;
+    filter: brightness(25%);
+}
+
+/* about us styling */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.profile-content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    font-family: 'Alkatra', cursive;
+    font-weight: lighter;
+}
+
+.profile-content-wrapper span {
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: crimson;
+}
